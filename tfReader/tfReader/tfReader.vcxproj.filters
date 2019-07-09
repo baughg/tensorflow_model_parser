@@ -18,63 +18,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\core\protobuf\tensor_bundle.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\tensor_shape.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\tensor_slice.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\types.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\versions.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\meta_graph.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\graph.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\op_def.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\saved_object_graph.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\saver.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\attr_value.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\function.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\node_def.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\struct.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\trackable_object_graph.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\variable.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\tensor.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\resource_handle.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\saved_model.pb.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\core\lib\io\block.h">
       <Filter>tf_lib</Filter>
     </ClInclude>
@@ -132,93 +75,132 @@
     <ClInclude Include="..\..\core\lib\strings\numbers.h">
       <Filter>tf_lib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\core\lib\hash\hash.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\platform\default\mutex.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\platform\file_system.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\core\protobuf\attr_value.pb.h">
+      <Filter>tf_lib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\core\lib\io\block_builder.h">
-      <Filter>Header Files</Filter>
+      <Filter>tf_lib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\core\lib\io\table.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\core\lib\io\buffered_inputstream.h">
+      <Filter>tf_lib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\core\lib\io\format.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\lib\hash\crc32c.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\core\lib\io\two_level_iterator.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\core\lib\io\compression.h">
+      <Filter>tf_lib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\core\platform\cpu_info.h">
-      <Filter>Header Files</Filter>
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\hash\crc32c.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\file_system.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\format.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\function.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\graph.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\hash\hash.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\inputbuffer.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\inputstream_interface.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\meta_graph.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\default\mutex.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\node_def.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\op_def.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\random_inputstream.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\resource_handle.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\saved_model.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\saved_object_graph.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\saver.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\struct.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\table.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\table_builder.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\table_options.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\tensor.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\tensor_bundle.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\tensor_shape.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\tensor_slice.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\trackable_object_graph.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\two_level_iterator.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\types.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\variable.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\protobuf\versions.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\record_reader.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\zlib_outputbuffer.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\zlib_compression_options.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\zlib_inputstream.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\record_writer.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\util\tensor_bundle\tensor_bundle.h">
+      <Filter>tf_lib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="tfReader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\tensor_bundle.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\tensor_shape.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\tensor_slice.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\types.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\versions.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\meta_graph.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\graph.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\op_def.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\saved_object_graph.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\saver.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\attr_value.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\function.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\node_def.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\struct.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\trackable_object_graph.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\variable.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\tensor.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\resource_handle.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\saved_model.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\core\lib\io\block.cc">
@@ -272,35 +254,140 @@
     <ClCompile Include="..\..\core\lib\strings\numbers.cc">
       <Filter>tf_lib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\core\lib\hash\hash.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\platform\default\mutex.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\platform\file_system.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\platform\windows\env_time.cc">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\core\protobuf\attr_value.pb.cc">
+      <Filter>tf_lib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\core\lib\io\block_builder.cc">
-      <Filter>Source Files</Filter>
+      <Filter>tf_lib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\core\lib\hash\crc32c.cc">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\core\lib\io\buffered_inputstream.cc">
+      <Filter>tf_lib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\core\lib\io\two_level_iterator.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\lib\hash\crc32c_accelerate.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\platform\windows\port.cc">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\core\lib\io\compression.cc">
+      <Filter>tf_lib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\core\platform\cpu_info.cc">
-      <Filter>Source Files</Filter>
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\hash\crc32c.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\hash\crc32c_accelerate.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\windows\env_time.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\file_system.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\format.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\function.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\graph.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\hash\hash.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\inputbuffer.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\inputstream_interface.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\meta_graph.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\default\mutex.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\node_def.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\op_def.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\windows\port.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\random_inputstream.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\resource_handle.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\saved_model.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\saved_object_graph.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\saver.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\struct.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\table.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\table_builder.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\tensor.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\tensor_bundle.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\tensor_shape.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\tensor_slice.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\trackable_object_graph.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\two_level_iterator.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\types.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\variable.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\protobuf\versions.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\record_reader.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\zlib_outputbuffer.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\zlib_compression_options.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\zlib_inputstream.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\record_writer.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\util\tensor_bundle\tensor_bundle.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\tensor_shape.pb_text.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\types.pb_text.cc">
+      <Filter>tf_lib</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
