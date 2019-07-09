@@ -171,9 +171,6 @@
     <ClInclude Include="..\..\core\lib\io\two_level_iterator.h">
       <Filter>tf_lib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\types.pb.h">
-      <Filter>tf_lib</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\core\protobuf\variable.pb.h">
       <Filter>tf_lib</Filter>
     </ClInclude>
@@ -197,6 +194,9 @@
     </ClInclude>
     <ClInclude Include="..\..\core\util\tensor_bundle\tensor_bundle.h">
       <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\types.pb.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -356,9 +356,6 @@
     <ClCompile Include="..\..\core\lib\io\two_level_iterator.cc">
       <Filter>tf_lib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\types.pb.cc">
-      <Filter>tf_lib</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\core\protobuf\variable.pb.cc">
       <Filter>tf_lib</Filter>
     </ClCompile>
@@ -380,14 +377,17 @@
     <ClCompile Include="..\..\core\lib\io\record_writer.cc">
       <Filter>tf_lib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\core\util\tensor_bundle\tensor_bundle.cc">
-      <Filter>tf_lib</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\core\framework\tensor_shape.pb_text.cc">
       <Filter>tf_lib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\core\framework\types.pb_text.cc">
       <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\util\tensor_bundle\tensor_bundle.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\types.pb.cc">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

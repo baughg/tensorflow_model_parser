@@ -106,7 +106,7 @@
       <PreprocessorDefinitions>NOMINMAX ;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;PLATFORM_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Movidius\development\TensorFlowReader\tensorflow\core\protobuf;$(PROTOBUF_DIR)\include;C:\Movidius\development\TensorFlowReader\tensorflow\core\lib\io;C:\Movidius\development\TensorFlowReader\;C:\Movidius\library\abseil-cpp;C:\Movidius\library\double-conversion\;C:\Movidius\library\nsync\public;C:\Movidius\library\zlib-1.2.11;C:\Movidius\development\tensorflow\tensorflow;C:\Movidius\library\third_party\eigen3</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Movidius\development\TensorFlowReader\tensorflow\core\protobuf;$(PROTOBUF_DIR)\include;C:\Movidius\development\TensorFlowReader\tensorflow\core\lib\io;C:\Movidius\development\TensorFlowReader\;C:\Movidius\library\abseil-cpp;C:\Movidius\library\double-conversion\;C:\Movidius\library\nsync\public;C:\Movidius\library\zlib-1.2.11;C:\Movidius\development\tensorflow\tensorflow\;C:\Movidius\development\tensorflow\tensorflow\third_party\eigen3</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -154,6 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\core\framework\types.pb.h" />
     <ClInclude Include="..\..\core\lib\core\coding.h" />
     <ClInclude Include="..\..\core\lib\core\errors.h" />
     <ClInclude Include="..\..\core\lib\core\error_codes.pb.h" />
@@ -210,13 +211,13 @@
     <ClInclude Include="..\..\core\protobuf\tensor_shape.pb.h" />
     <ClInclude Include="..\..\core\protobuf\tensor_slice.pb.h" />
     <ClInclude Include="..\..\core\protobuf\trackable_object_graph.pb.h" />
-    <ClInclude Include="..\..\core\protobuf\types.pb.h" />
     <ClInclude Include="..\..\core\protobuf\variable.pb.h" />
     <ClInclude Include="..\..\core\protobuf\versions.pb.h" />
     <ClInclude Include="..\..\core\util\tensor_bundle\tensor_bundle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\core\framework\tensor_shape.pb_text.cc" />
+    <ClCompile Include="..\..\core\framework\types.pb.cc" />
     <ClCompile Include="..\..\core\framework\types.pb_text.cc" />
     <ClCompile Include="..\..\core\lib\core\coding.cc" />
     <ClCompile Include="..\..\core\lib\core\error_codes.pb.cc" />
@@ -274,7 +275,6 @@
     <ClCompile Include="..\..\core\protobuf\tensor_shape.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\tensor_slice.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\trackable_object_graph.pb.cc" />
-    <ClCompile Include="..\..\core\protobuf\types.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\variable.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\versions.pb.cc" />
     <ClCompile Include="..\..\core\util\tensor_bundle\tensor_bundle.cc" />
