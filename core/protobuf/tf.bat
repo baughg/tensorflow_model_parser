@@ -17,3 +17,4 @@ protoc -I. --cpp_out=. struct.proto
 protoc -I. --cpp_out=. tensor.proto
 protoc -I. --cpp_out=. resource_handle.proto
 protoc -I. --cpp_out=. saved_model.proto
+protoc -I. --cpp_out=. error_codes.proto

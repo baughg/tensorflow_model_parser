@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="tf_lib">
+      <UniqueIdentifier>{18e7dff5-6821-446a-b017-8eaa4791c1ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\core\protobuf\tensor_bundle.pb.h">
@@ -71,6 +74,75 @@
     </ClInclude>
     <ClInclude Include="..\..\core\protobuf\saved_model.pb.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\block.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\iterator.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\core\coding.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\core\error_codes.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\core\errors.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\core\status.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\strings\strcat.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\strings\stringprintf.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\default\logging.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\env.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\env_time.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\io\path.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\strings\base64.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\strings\ordered_code.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\strings\proto_serialization.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\strings\proto_text_util.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\strings\scanner.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\strings\str_util.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\strings\numbers.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\hash\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\default\mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\file_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\gb\port_stub.h">
+      <Filter>tf_lib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +204,69 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\core\protobuf\saved_model.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\block.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\iterator.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\core\coding.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\core\error_codes.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\core\status.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\strings\strcat.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\strings\stringprintf.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\default\logging.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\env.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\io\path.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\strings\base64.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\strings\ordered_code.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\strings\proto_serialization.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\strings\proto_text_util.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\strings\scanner.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\strings\str_util.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\strings\numbers.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\hash\hash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\default\mutex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\file_system.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\windows\env_time.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
