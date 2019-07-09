@@ -103,7 +103,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;PLATFORM_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NOMINMAX ;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;PLATFORM_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>C:\Movidius\development\TensorFlowReader\tensorflow\core\protobuf;$(PROTOBUF_DIR)\include;C:\Movidius\development\TensorFlowReader\tensorflow\core\lib\io;C:\Movidius\development\TensorFlowReader\;C:\Movidius\library\abseil-cpp;C:\Movidius\library\double-conversion\;C:\Movidius\library\nsync\public</AdditionalIncludeDirectories>
@@ -158,11 +158,15 @@
     <ClInclude Include="..\..\core\lib\core\errors.h" />
     <ClInclude Include="..\..\core\lib\core\error_codes.pb.h" />
     <ClInclude Include="..\..\core\lib\core\status.h" />
-    <ClInclude Include="..\..\core\lib\gb\port_stub.h" />
+    <ClInclude Include="..\..\core\lib\hash\crc32c.h" />
     <ClInclude Include="..\..\core\lib\hash\hash.h" />
     <ClInclude Include="..\..\core\lib\io\block.h" />
+    <ClInclude Include="..\..\core\lib\io\block_builder.h" />
+    <ClInclude Include="..\..\core\lib\io\format.h" />
     <ClInclude Include="..\..\core\lib\io\iterator.h" />
     <ClInclude Include="..\..\core\lib\io\path.h" />
+    <ClInclude Include="..\..\core\lib\io\table.h" />
+    <ClInclude Include="..\..\core\lib\io\two_level_iterator.h" />
     <ClInclude Include="..\..\core\lib\strings\base64.h" />
     <ClInclude Include="..\..\core\lib\strings\numbers.h" />
     <ClInclude Include="..\..\core\lib\strings\ordered_code.h" />
@@ -172,6 +176,7 @@
     <ClInclude Include="..\..\core\lib\strings\strcat.h" />
     <ClInclude Include="..\..\core\lib\strings\stringprintf.h" />
     <ClInclude Include="..\..\core\lib\strings\str_util.h" />
+    <ClInclude Include="..\..\core\platform\cpu_info.h" />
     <ClInclude Include="..\..\core\platform\default\logging.h" />
     <ClInclude Include="..\..\core\platform\default\mutex.h" />
     <ClInclude Include="..\..\core\platform\env.h" />
@@ -201,10 +206,14 @@
     <ClCompile Include="..\..\core\lib\core\coding.cc" />
     <ClCompile Include="..\..\core\lib\core\error_codes.pb.cc" />
     <ClCompile Include="..\..\core\lib\core\status.cc" />
+    <ClCompile Include="..\..\core\lib\hash\crc32c.cc" />
+    <ClCompile Include="..\..\core\lib\hash\crc32c_accelerate.cc" />
     <ClCompile Include="..\..\core\lib\hash\hash.cc" />
     <ClCompile Include="..\..\core\lib\io\block.cc" />
+    <ClCompile Include="..\..\core\lib\io\block_builder.cc" />
     <ClCompile Include="..\..\core\lib\io\iterator.cc" />
     <ClCompile Include="..\..\core\lib\io\path.cc" />
+    <ClCompile Include="..\..\core\lib\io\two_level_iterator.cc" />
     <ClCompile Include="..\..\core\lib\strings\base64.cc" />
     <ClCompile Include="..\..\core\lib\strings\numbers.cc" />
     <ClCompile Include="..\..\core\lib\strings\ordered_code.cc" />
@@ -214,11 +223,13 @@
     <ClCompile Include="..\..\core\lib\strings\strcat.cc" />
     <ClCompile Include="..\..\core\lib\strings\stringprintf.cc" />
     <ClCompile Include="..\..\core\lib\strings\str_util.cc" />
+    <ClCompile Include="..\..\core\platform\cpu_info.cc" />
     <ClCompile Include="..\..\core\platform\default\logging.cc" />
     <ClCompile Include="..\..\core\platform\default\mutex.cc" />
     <ClCompile Include="..\..\core\platform\env.cc" />
     <ClCompile Include="..\..\core\platform\file_system.cc" />
     <ClCompile Include="..\..\core\platform\windows\env_time.cc" />
+    <ClCompile Include="..\..\core\platform\windows\port.cc" />
     <ClCompile Include="..\..\core\protobuf\attr_value.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\function.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\graph.pb.cc" />

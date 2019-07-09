@@ -27,7 +27,6 @@ limitations under the License.
 #if defined(PLATFORM_WINDOWS)
 #include <windows.h>
 #include "tensorflow/core/platform/windows/wide_char.h"
-#include "tensorflow/core/lib/gb/port_stub.h" // G.B.
 #define PATH_MAX MAX_PATH
 #else
 #include <fcntl.h>
