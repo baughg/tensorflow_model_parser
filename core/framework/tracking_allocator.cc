@@ -99,7 +99,8 @@ void TrackingAllocator::DeallocateRaw(void* ptr) {
     if (tracks_allocation_sizes) {
       CHECK_GE(allocated_, allocated_bytes);
       allocated_ -= allocated_bytes;
-      allocations_.emplace_back(-allocated_bytes, Env::Default()->NowMicros());
+      int64_t neg_allocated_bytes = -static_cast<int64_t>(allocated_bytes); // G.B.
+      allocations_.emplace_back(neg_allocated_bytes, Env::Default()->NowMicros());
     }
     should_delete = UnRef();
   }

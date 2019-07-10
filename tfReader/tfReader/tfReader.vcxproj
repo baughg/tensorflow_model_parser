@@ -106,7 +106,7 @@
       <PreprocessorDefinitions>NOMINMAX ;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;PLATFORM_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>C:\Movidius\development\TensorFlowReader\tensorflow\core\protobuf;$(PROTOBUF_DIR)\include;C:\Movidius\development\TensorFlowReader\tensorflow\core\lib\io;C:\Movidius\development\TensorFlowReader\;C:\Movidius\library\abseil-cpp;C:\Movidius\library\double-conversion\;C:\Movidius\library\nsync\public;C:\Movidius\library\zlib-1.2.11;C:\Movidius\development\tensorflow\tensorflow\;C:\Movidius\development\tensorflow\tensorflow\third_party\eigen3</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Movidius\development\TensorFlowReader\tensorflow\core\protobuf;$(PROTOBUF_DIR)\include;C:\Movidius\development\TensorFlowReader\tensorflow\core\lib\io;C:\Movidius\development\TensorFlowReader\;C:\Movidius\library\abseil-cpp;C:\Movidius\library\double-conversion\;C:\Movidius\library\nsync\public;C:\Movidius\library\zlib-1.2.11;C:\Movidius\development\tensorflow\tensorflow\;C:\Movidius\library\third_party\eigen3;C:\Movidius\development\TensorFlowReader\tensorflow\core\framework</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -154,11 +154,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\core\framework\allocation_description.pb.h" />
+    <ClInclude Include="..\..\core\framework\allocation_description.pb_text.h" />
+    <ClInclude Include="..\..\core\framework\allocator.h" />
+    <ClInclude Include="..\..\core\framework\allocator_registry.h" />
+    <ClInclude Include="..\..\core\framework\log_memory.h" />
+    <ClInclude Include="..\..\core\framework\log_memory.pb.h" />
+    <ClInclude Include="..\..\core\framework\log_memory.pb_text.h" />
+    <ClInclude Include="..\..\core\framework\resource_handle.h" />
+    <ClInclude Include="..\..\core\framework\tensor.h" />
+    <ClInclude Include="..\..\core\framework\tensor_bundle.pb.h" />
+    <ClInclude Include="..\..\core\framework\tensor_description.pb.h" />
+    <ClInclude Include="..\..\core\framework\tensor_description.pb_text.h" />
+    <ClInclude Include="..\..\core\framework\tensor_shape.h" />
+    <ClInclude Include="..\..\core\framework\tensor_shape.pb.h" />
+    <ClInclude Include="..\..\core\framework\tensor_slice.h" />
+    <ClInclude Include="..\..\core\framework\tracking_allocator.h" />
+    <ClInclude Include="..\..\core\framework\typed_allocator.h" />
+    <ClInclude Include="..\..\core\framework\types.h" />
     <ClInclude Include="..\..\core\framework\types.pb.h" />
+    <ClInclude Include="..\..\core\framework\variant.h" />
+    <ClInclude Include="..\..\core\framework\variant_op_registry.h" />
+    <ClInclude Include="..\..\core\framework\variant_tensor_data.h" />
+    <ClInclude Include="..\..\core\framework\versions.h" />
     <ClInclude Include="..\..\core\lib\core\coding.h" />
     <ClInclude Include="..\..\core\lib\core\errors.h" />
     <ClInclude Include="..\..\core\lib\core\error_codes.pb.h" />
     <ClInclude Include="..\..\core\lib\core\status.h" />
+    <ClInclude Include="..\..\core\lib\core\threadpool.h" />
     <ClInclude Include="..\..\core\lib\hash\crc32c.h" />
     <ClInclude Include="..\..\core\lib\hash\hash.h" />
     <ClInclude Include="..\..\core\lib\io\block.h" />
@@ -180,6 +203,7 @@
     <ClInclude Include="..\..\core\lib\io\zlib_compression_options.h" />
     <ClInclude Include="..\..\core\lib\io\zlib_inputstream.h" />
     <ClInclude Include="..\..\core\lib\io\zlib_outputbuffer.h" />
+    <ClInclude Include="..\..\core\lib\random\random.h" />
     <ClInclude Include="..\..\core\lib\strings\base64.h" />
     <ClInclude Include="..\..\core\lib\strings\numbers.h" />
     <ClInclude Include="..\..\core\lib\strings\ordered_code.h" />
@@ -189,12 +213,20 @@
     <ClInclude Include="..\..\core\lib\strings\strcat.h" />
     <ClInclude Include="..\..\core\lib\strings\stringprintf.h" />
     <ClInclude Include="..\..\core\lib\strings\str_util.h" />
+    <ClInclude Include="..\..\core\platform\abi.h" />
     <ClInclude Include="..\..\core\platform\cpu_info.h" />
     <ClInclude Include="..\..\core\platform\default\logging.h" />
     <ClInclude Include="..\..\core\platform\default\mutex.h" />
+    <ClInclude Include="..\..\core\platform\denormal.h" />
     <ClInclude Include="..\..\core\platform\env.h" />
     <ClInclude Include="..\..\core\platform\env_time.h" />
     <ClInclude Include="..\..\core\platform\file_system.h" />
+    <ClInclude Include="..\..\core\platform\file_system_helper.h" />
+    <ClInclude Include="..\..\core\platform\setround.h" />
+    <ClInclude Include="..\..\core\platform\tensor_coding.h" />
+    <ClInclude Include="..\..\core\platform\tracing.h" />
+    <ClInclude Include="..\..\core\platform\windows\error.h" />
+    <ClInclude Include="..\..\core\platform\windows\windows_file_system.h" />
     <ClInclude Include="..\..\core\protobuf\attr_value.pb.h" />
     <ClInclude Include="..\..\core\protobuf\function.pb.h" />
     <ClInclude Include="..\..\core\protobuf\graph.pb.h" />
@@ -207,21 +239,46 @@
     <ClInclude Include="..\..\core\protobuf\saver.pb.h" />
     <ClInclude Include="..\..\core\protobuf\struct.pb.h" />
     <ClInclude Include="..\..\core\protobuf\tensor.pb.h" />
-    <ClInclude Include="..\..\core\protobuf\tensor_bundle.pb.h" />
     <ClInclude Include="..\..\core\protobuf\tensor_shape.pb.h" />
     <ClInclude Include="..\..\core\protobuf\tensor_slice.pb.h" />
     <ClInclude Include="..\..\core\protobuf\trackable_object_graph.pb.h" />
     <ClInclude Include="..\..\core\protobuf\variable.pb.h" />
     <ClInclude Include="..\..\core\protobuf\versions.pb.h" />
+    <ClInclude Include="..\..\core\util\saved_tensor_slice_util.h" />
+    <ClInclude Include="..\..\core\util\tensor_bundle\naming.h" />
     <ClInclude Include="..\..\core\util\tensor_bundle\tensor_bundle.h" />
+    <ClInclude Include="..\..\core\util\tensor_slice_set.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\core\framework\allocation_description.pb.cc" />
+    <ClCompile Include="..\..\core\framework\allocation_description.pb_text.cc" />
+    <ClCompile Include="..\..\core\framework\allocator.cc" />
+    <ClCompile Include="..\..\core\framework\allocator_registry.cc" />
+    <ClCompile Include="..\..\core\framework\log_memory.cc" />
+    <ClCompile Include="..\..\core\framework\log_memory.pb.cc" />
+    <ClCompile Include="..\..\core\framework\log_memory.pb_text.cc" />
+    <ClCompile Include="..\..\core\framework\resource_handle.cc" />
+    <ClCompile Include="..\..\core\framework\tensor.cc" />
+    <ClCompile Include="..\..\core\framework\tensor_bundle.pb.cc" />
+    <ClCompile Include="..\..\core\framework\tensor_description.pb.cc" />
+    <ClCompile Include="..\..\core\framework\tensor_description.pb_text.cc" />
+    <ClCompile Include="..\..\core\framework\tensor_shape.cc" />
+    <ClCompile Include="..\..\core\framework\tensor_shape.pb.cc" />
     <ClCompile Include="..\..\core\framework\tensor_shape.pb_text.cc" />
+    <ClCompile Include="..\..\core\framework\tensor_slice.cc" />
+    <ClCompile Include="..\..\core\framework\tracking_allocator.cc" />
+    <ClCompile Include="..\..\core\framework\typed_allocator.cc" />
+    <ClCompile Include="..\..\core\framework\types.cc" />
     <ClCompile Include="..\..\core\framework\types.pb.cc" />
     <ClCompile Include="..\..\core\framework\types.pb_text.cc" />
+    <ClCompile Include="..\..\core\framework\variant.cc" />
+    <ClCompile Include="..\..\core\framework\variant_op_registry.cc" />
+    <ClCompile Include="..\..\core\framework\variant_tensor_data.cc" />
+    <ClCompile Include="..\..\core\framework\versions.cc" />
     <ClCompile Include="..\..\core\lib\core\coding.cc" />
     <ClCompile Include="..\..\core\lib\core\error_codes.pb.cc" />
     <ClCompile Include="..\..\core\lib\core\status.cc" />
+    <ClCompile Include="..\..\core\lib\core\threadpool.cc" />
     <ClCompile Include="..\..\core\lib\hash\crc32c.cc" />
     <ClCompile Include="..\..\core\lib\hash\crc32c_accelerate.cc" />
     <ClCompile Include="..\..\core\lib\hash\hash.cc" />
@@ -243,6 +300,7 @@
     <ClCompile Include="..\..\core\lib\io\zlib_compression_options.cc" />
     <ClCompile Include="..\..\core\lib\io\zlib_inputstream.cc" />
     <ClCompile Include="..\..\core\lib\io\zlib_outputbuffer.cc" />
+    <ClCompile Include="..\..\core\lib\random\random.cc" />
     <ClCompile Include="..\..\core\lib\strings\base64.cc" />
     <ClCompile Include="..\..\core\lib\strings\numbers.cc" />
     <ClCompile Include="..\..\core\lib\strings\ordered_code.cc" />
@@ -252,13 +310,23 @@
     <ClCompile Include="..\..\core\lib\strings\strcat.cc" />
     <ClCompile Include="..\..\core\lib\strings\stringprintf.cc" />
     <ClCompile Include="..\..\core\lib\strings\str_util.cc" />
+    <ClCompile Include="..\..\core\platform\abi.cc" />
     <ClCompile Include="..\..\core\platform\cpu_info.cc" />
     <ClCompile Include="..\..\core\platform\default\logging.cc" />
     <ClCompile Include="..\..\core\platform\default\mutex.cc" />
-    <ClCompile Include="..\..\core\platform\env.cc" />
+    <ClCompile Include="..\..\core\platform\denormal.cc" />
+    <ClCompile Include="..\..\core\platform\env_base.cc" />
     <ClCompile Include="..\..\core\platform\file_system.cc" />
+    <ClCompile Include="..\..\core\platform\file_system_helper.cc" />
+    <ClCompile Include="..\..\core\platform\posix\error_posix.cc" />
+    <ClCompile Include="..\..\core\platform\setround.cc" />
+    <ClCompile Include="..\..\core\platform\tensor_coding.cc" />
+    <ClCompile Include="..\..\core\platform\tracing.cc" />
+    <ClCompile Include="..\..\core\platform\windows\env.cc" />
     <ClCompile Include="..\..\core\platform\windows\env_time.cc" />
+    <ClCompile Include="..\..\core\platform\windows\error.cc" />
     <ClCompile Include="..\..\core\platform\windows\port.cc" />
+    <ClCompile Include="..\..\core\platform\windows\windows_file_system.cc" />
     <ClCompile Include="..\..\core\protobuf\attr_value.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\function.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\graph.pb.cc" />
@@ -271,13 +339,15 @@
     <ClCompile Include="..\..\core\protobuf\saver.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\struct.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\tensor.pb.cc" />
-    <ClCompile Include="..\..\core\protobuf\tensor_bundle.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\tensor_shape.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\tensor_slice.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\trackable_object_graph.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\variable.pb.cc" />
     <ClCompile Include="..\..\core\protobuf\versions.pb.cc" />
+    <ClCompile Include="..\..\core\util\saved_tensor_slice_util.cc" />
+    <ClCompile Include="..\..\core\util\tensor_bundle\naming.cc" />
     <ClCompile Include="..\..\core\util\tensor_bundle\tensor_bundle.cc" />
+    <ClCompile Include="..\..\core\util\tensor_slice_set.cc" />
     <ClCompile Include="tfReader.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -47,7 +47,7 @@ struct ThreadOptions;
 /// multiple threads without any external synchronization.
 class Env {
  public:
-  Env();
+     Env();
   virtual ~Env() = default;
 
   /// \brief Returns a default environment suitable for the current operating

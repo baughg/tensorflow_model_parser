@@ -156,9 +156,6 @@
     <ClInclude Include="..\..\core\protobuf\tensor.pb.h">
       <Filter>tf_lib</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\core\protobuf\tensor_bundle.pb.h">
-      <Filter>tf_lib</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\core\protobuf\tensor_shape.pb.h">
       <Filter>tf_lib</Filter>
     </ClInclude>
@@ -195,8 +192,113 @@
     <ClInclude Include="..\..\core\util\tensor_bundle\tensor_bundle.h">
       <Filter>tf_lib</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\core\framework\tensor_bundle.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\variant.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\random\random.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\tensor_shape.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\tensor_shape.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\tensor_slice.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\tensor.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\core\framework\types.pb.h">
-      <Filter>Header Files</Filter>
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\tensor_coding.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\resource_handle.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\variant_op_registry.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\allocation_description.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\allocation_description.pb_text.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\log_memory.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\log_memory.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\log_memory.pb_text.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\tensor_description.pb.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\tensor_description.pb_text.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\util\tensor_slice_set.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\variant_tensor_data.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\types.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\typed_allocator.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\versions.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\allocator.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\tracking_allocator.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\framework\allocator_registry.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\abi.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\util\tensor_bundle\naming.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\util\saved_tensor_slice_util.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\windows\windows_file_system.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\windows\error.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\file_system_helper.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\lib\core\threadpool.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\tracing.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\setround.h">
+      <Filter>tf_lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\platform\denormal.h">
+      <Filter>tf_lib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -225,9 +327,6 @@
       <Filter>tf_lib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\core\platform\default\logging.cc">
-      <Filter>tf_lib</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\core\platform\env.cc">
       <Filter>tf_lib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\core\lib\io\path.cc">
@@ -341,9 +440,6 @@
     <ClCompile Include="..\..\core\protobuf\tensor.pb.cc">
       <Filter>tf_lib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\core\protobuf\tensor_bundle.pb.cc">
-      <Filter>tf_lib</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\core\protobuf\tensor_shape.pb.cc">
       <Filter>tf_lib</Filter>
     </ClCompile>
@@ -386,8 +482,122 @@
     <ClCompile Include="..\..\core\util\tensor_bundle\tensor_bundle.cc">
       <Filter>tf_lib</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\core\framework\tensor_bundle.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\variant.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\random\random.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\tensor_shape.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\tensor_shape.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\tensor_slice.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\tensor.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\core\framework\types.pb.cc">
-      <Filter>Source Files</Filter>
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\tensor_coding.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\resource_handle.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\variant_op_registry.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\allocation_description.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\allocation_description.pb_text.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\log_memory.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\log_memory.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\log_memory.pb_text.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\tensor_description.pb.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\tensor_description.pb_text.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\util\tensor_slice_set.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\variant_tensor_data.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\windows\env.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\types.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\typed_allocator.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\versions.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\allocator.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\tracking_allocator.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\framework\allocator_registry.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\abi.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\util\tensor_bundle\naming.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\util\saved_tensor_slice_util.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\env_base.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\windows\windows_file_system.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\windows\error.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\file_system_helper.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\lib\core\threadpool.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\tracing.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\setround.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\denormal.cc">
+      <Filter>tf_lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\core\platform\posix\error_posix.cc">
+      <Filter>tf_lib</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
