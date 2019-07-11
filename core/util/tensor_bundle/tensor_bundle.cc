@@ -1068,7 +1068,7 @@ string BundleReader::DebugString() {
   string shape_str;
   BundleEntryProto entry;
   Seek(kHeaderEntryKey);
-  for (Next(); Valid(); Next()) {
+  for (Next(); Valid(); Next()) {      
     CHECK(entry.ParseFromArray(value().data(), value().size()));
     if (entry.slices_size() > 0) continue;  // Slice of some partitioned var.
 
